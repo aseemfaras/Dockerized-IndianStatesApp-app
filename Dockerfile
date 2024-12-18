@@ -1,16 +1,16 @@
-# Use the official Python image as the base
+# Python image as the base
 FROM python:3.11
 
-# Set the working directory in the container
+# setting working directory in the container
 WORKDIR /app
 
-# Copy application files to the container
+# Copying application files to the container
 COPY . .
 
-# Install dependencies
+# Installing dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the default Flask port
+# Exposing the default Flask port
 EXPOSE 5000
 
 # Command to run the Flask app
