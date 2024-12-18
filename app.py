@@ -23,4 +23,5 @@ def get_districts(state_name):
     return jsonify(state_data["districts"] if state_data else [])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
+
